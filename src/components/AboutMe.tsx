@@ -13,7 +13,7 @@ export const AboutMe:React.FC = () => {
       <SectionContainer
         id="about"
         badge="👋 About Me"
-        title="Get to know Me"
+        title="Get To Know Me"
       >
         <div className="flex lg:flex-row flex-col lg:gap-28 items-center">
           <div className="flex flex-col lg:items-start items-end  md:text-base text-sm">
