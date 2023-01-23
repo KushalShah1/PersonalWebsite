@@ -4,6 +4,7 @@ import { NavBar } from "../components/NavBar";
 import { Main } from "../components/Main";
 import { AboutMe } from "../components/AboutMe";
 import { ContactMeFooter } from "../components/ContactMeFooter";
+import { Portfolio } from "../components/Portfolio";
 
 const pageStyles = {
   color: "#232129",
@@ -146,8 +147,11 @@ const IndexPage: React.FC<PageProps> = () => {
       <div className="container mx-auto">
         <NavBar />
         <Main />
-        <AboutMe />
-        <ContactMeFooter />
+        <div className="flex flex-col gap-36">
+          <AboutMe />
+          <Portfolio />
+          <ContactMeFooter />
+        </div>
       </div>
     </main>
   );

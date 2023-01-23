@@ -6,17 +6,17 @@ import carousel2 from '../images/carousel2.jpg';
 // @ts-expect-error
 import carousel3 from '../images/carousel3.jpg';
 import { SocialMediaRow } from "./SocialMediaRow";
+import { SectionContainer } from "./SectionContainer";
 
 export const AboutMe:React.FC = () => {
     return (
-      <div id="about" className="flex flex-col px-12">
-        <span className="px-6 py-2 rounded-2xl bg-t-green-hover text-t-green font-semibold text-lg w-fit shadow-md">
-          👋 About Me
-        </span>
-        <span className="font-semibold text-5xl py-6">Get to know Kushal</span>
-
+      <SectionContainer
+        id="about"
+        badge="👋 About Me"
+        title="Get to know Me"
+      >
         <div className="flex lg:flex-row flex-col lg:gap-28 items-center">
-          <div className="flex flex-col lg:items-start items-end text-md">
+          <div className="flex flex-col lg:items-start items-end  md:text-base text-sm">
             I am a recent graduate of the University of Texas at Austin with a
             degree in Electrical and Computer Engineering. I have a passion for
             technology and innovation, which led me to pursue a career in
@@ -34,11 +34,14 @@ export const AboutMe:React.FC = () => {
               <SocialMediaRow className="pt-12" />
             </span>
           </div>
-          <img src={carousel1} className="rounded-3xl object-cover h-96 w-96 mt-14 lg:mt-0" />
+          <img
+            src={carousel1}
+            className="rounded-3xl object-cover lg:h-96 lg:w-96 h-80 w-80 mt-14 lg:mt-0"
+          />
           <span className="block lg:hidden">
             <SocialMediaRow className="pt-12" />
           </span>
         </div>
-      </div>
+      </SectionContainer>
     );
 }
