@@ -142,15 +142,15 @@ export const Portfolio: React.FC = () => {
 
     return (
       <SectionContainer
-        id="porfolio"
-        badge="🗂️ Porfolio"
+        id="portfolio"
+        badge="🗂️ Portfolio"
         title="What I've Done"
       >
         <div className="pt-2.5 pb-14">
         I am a recent graduate from UT Austin with a degree in Electrical and
         Computer Engineering with a focus in Data Science. I have a passion for
         entrepreneurship and have started several startups during my time in
-        college, including TukTuk, a ridesharing marketplace, and a quant
+        college, including tuktuk, a ridesharing marketplace, and a quant
         trading startup. My professional experience includes internships at Visa
         as a TPM, Pop Social as a backend developer, and Amazon on their Sub
         Same Day shipping team. I currently work as a software developer at
